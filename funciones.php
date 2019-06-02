@@ -21,6 +21,7 @@ if ($callbackName=="") {
 function callback($up){
   return $up["callback_query"];
 }
+
 function sendDeleteMessage($chatId, $messageId, $response, $links){
   sendMessage($chatId, $response, $links);
   deleteMessage($chatId, $messageId);
